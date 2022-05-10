@@ -1,12 +1,13 @@
 version: '2'
 services:
-  server:
-    image: nginx:1.15
+  server1:
+    image: nginx:latest
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./site:/usr/share/nginx/html
-      - ./nginx/my-site.com.crt:/etc/nginx/my-site.com.crt 
-      - ./nginx/my-site.com.key:/etc/nginx/my-site.com.key 
+      - ./nginx/my-site.com.crt:/etc/nginx/my-nginx.com.crt 
+      - ./nginx/my-site.com.key:/etc/nginx/my-nginx.com.key 
     ports:
     - "8080:80"
-    - "443:443" 
+    - "8443:443" 
+ # server2:
