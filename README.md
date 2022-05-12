@@ -1,3 +1,3 @@
 # NGINX-Apache-strona
 
-Nginx z SSL i przekierowaniem na HTTPS
+Kod do Nginx i Apache znajduje się w pliku ssl-docker nginx
